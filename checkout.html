@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f7f8f5">
+    <meta name="description" content="Enter your delivery details to review your BLAZE HOUSE order.">
+    <title>Checkout — BLAZE HOUSE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body class="checkout-page">
+    <header class="header">
+        <div class="wrap checkout-nav">
+            <a class="brand" href="index.html" aria-label="BLAZE HOUSE home"><span class="brand-mark">B</span><span>BLAZE <span>HOUSE</span></span></a>
+            <a class="back-to-shop" href="shop.html">← <span>Back to shop</span></a>
+            <span class="secure-note"><span aria-hidden="true">✓</span> Checkout preview</span>
+        </div>
+    </header>
+    <main class="wrap checkout-main">
+        <div class="checkout-heading">
+            <span class="eyebrow">Almost yours</span>
+            <h1>Checkout</h1>
+            <p>Where should we deliver your order?</p>
+        </div>
+        <div class="checkout-layout">
+            <section class="checkout-card" aria-labelledby="delivery-title">
+                <div class="card-heading">
+                    <span class="step-number">1</span>
+                    <div><h2 id="delivery-title">Delivery details</h2><p>We’ll use these details to arrange delivery.</p></div>
+                </div>
+                <div class="checkout-notice" id="checkoutNotice" role="status" aria-live="polite" tabindex="-1" hidden></div>
+                <form id="checkoutForm" action="https://formspree.io/f/xwlvgdyj" method="POST">
+                    <div class="field-grid">
+                        <label class="field field-full">Full name<input name="name" type="text" autocomplete="name" placeholder="e.g. Alex Morgan" required></label>
+                        <label class="field">Email address<input name="email" type="email" autocomplete="email" placeholder="you@example.com" required></label>
+                        <label class="field">Phone number<input name="phone" type="tel" autocomplete="tel" placeholder="+1 (555) 000-0000" required></label>
+                        <label class="field field-full">Street address<input name="address" type="text" autocomplete="street-address" placeholder="House number and street" required></label>
+                        <label class="field">City<input name="city" type="text" autocomplete="address-level2" placeholder="City" required></label>
+                        <label class="field">State / region<input name="region" type="text" autocomplete="address-level1" placeholder="State or region" required></label>
+                        <label class="field">Postal code<input name="postalCode" type="text" autocomplete="postal-code" placeholder="Postal code" required></label>
+                        <label class="field">Country<input name="country" type="text" autocomplete="country-name" placeholder="Country" required></label>
+                        <label class="field field-full">Order note <span class="optional">(optional)</span><textarea name="note" rows="3" placeholder="Delivery instructions or anything we should know"></textarea></label>
+                    </div>
+                    <div class="card-heading payment-heading">
+                        <span class="step-number" aria-hidden="true">2</span>
+                        <div><h2 id="payment-title">Card details</h2><p>Enter your payment information.</p></div>
+                    </div>
+                    <div class="field-grid card-fields" aria-labelledby="payment-title">
+                        <label class="field field-full">Name on card<input name="cardName" type="text" autocomplete="off" placeholder="Name as it appears on your card" required></label>
+                        <label class="field field-full">Card number<input name="cardNumber" type="text" inputmode="numeric" autocomplete="off" placeholder="0000 0000 0000 0000" minlength="12" maxlength="23" pattern="[0-9 ]{12,23}" required></label>
+                        <label class="field">Expiration date<input name="cardExpiry" type="text" inputmode="numeric" autocomplete="off" placeholder="MM / YY" pattern="(0[1-9]|1[0-2]) ?/ ?[0-9]{2}" required></label>
+                        <label class="field">Security code<input name="cardSecurityCode" type="password" inputmode="numeric" autocomplete="off" placeholder="CVC" minlength="3" maxlength="4" pattern="[0-9]{3,4}" required></label>
+                    </div>
+                    <button class="place-order-button" id="placeOrderButton" type="submit">Review order <span aria-hidden="true">→</span></button>
+                </form>
+            </section>
+            <aside class="order-card" aria-labelledby="summary-title">
+                <div class="order-heading"><h2 id="summary-title">Your order</h2><a href="shop.html">Edit cart</a></div>
+                <div class="order-items" id="orderItems" aria-live="polite"></div>
+                <div class="empty-order" id="emptyOrder" hidden>
+                    <span aria-hidden="true">🛍️</span>
+                    <strong>Your cart is empty</strong>
+                    <p>Add something you love before checking out.</p>
+                    <a href="shop.html" class="continue-link">Browse the shop <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="order-totals" id="orderTotals">
+                    <div><span>Subtotal</span><strong id="subtotalAmount">$0.00</strong></div>
+                    <div><span>Delivery</span><strong id="deliveryAmount">$0.00</strong></div>
+                    <p>Free delivery on orders over $150. Applicable taxes are not included.</p>
+                    <div class="order-total"><span>Estimated total</span><strong id="totalAmount">$0.00</strong></div>
+                </div>
+                <div class="order-footnote"><span aria-hidden="true">♡</span> Carefully packed, delivered with care.</div>
+            </aside>
+        </div>
+    </main>
+    <script src="checkout.js"></script>
+</body>
+</html>

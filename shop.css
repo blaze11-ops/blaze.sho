@@ -1,0 +1,338 @@
+.nav-links a[aria-current="page"] {
+    color: var(--green);
+}
+
+.shop-intro {
+    padding-top: 64px;
+    padding-bottom: 24px;
+}
+
+.shop-intro h1 {
+    max-width: 680px;
+    margin: 14px 0 12px;
+    font-size: clamp(38px, 5vw, 55px);
+}
+
+.shop-intro h1 em {
+    color: var(--green);
+    font-style: normal;
+}
+
+.shop-intro p {
+    max-width: 510px;
+    margin-bottom: 0;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.image-marquee {
+    overflow: hidden;
+    padding: 8px 0 38px;
+}
+
+.image-marquee-track,
+.image-marquee-group {
+    display: flex;
+    width: max-content;
+}
+
+.image-marquee-track {
+    animation: image-marquee-scroll 36s linear infinite;
+}
+
+.image-marquee-group {
+    gap: 16px;
+    padding-right: 16px;
+}
+
+.image-marquee img {
+    width: clamp(190px, 23vw, 270px);
+    height: 150px;
+    flex: 0 0 auto;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.image-marquee:hover .image-marquee-track,
+.image-marquee:focus-within .image-marquee-track {
+    animation-play-state: paused;
+}
+
+@keyframes image-marquee-scroll {
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.shop-page .products-section {
+    padding-top: 18px;
+}
+
+.shop-page .section-heading {
+    align-items: end;
+}
+
+.shop-page .product-grid {
+    padding-bottom: 50px;
+}
+
+.filter:focus-visible,
+.add-button:focus-visible,
+.cart-button:focus-visible,
+.search input:focus-visible {
+    outline: 3px solid rgba(20, 92, 69, .35);
+    outline-offset: 3px;
+}
+
+.cart-open {
+    overflow: hidden;
+}
+
+.cart-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 19;
+    background: rgba(18, 31, 25, .48);
+}
+
+.cart-drawer {
+    position: fixed;
+    inset: 0 0 0 auto;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    width: min(440px, 100%);
+    padding: 28px;
+    background: var(--paper);
+    box-shadow: -12px 0 45px rgba(19, 47, 36, .14);
+    transform: translateX(105%);
+    transition: transform .25s ease;
+    visibility: hidden;
+}
+
+.cart-drawer.open {
+    transform: translateX(0);
+    visibility: visible;
+}
+
+.cart-drawer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--line);
+}
+
+.cart-drawer-header h2 {
+    margin: 9px 0 0;
+    font: 800 25px Manrope, sans-serif;
+    letter-spacing: -.05em;
+}
+
+.cart-drawer-header h2 span {
+    color: var(--muted);
+    font: 500 13px "DM Sans", sans-serif;
+    letter-spacing: 0;
+}
+
+.cart-close {
+    width: 38px;
+    height: 38px;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    background: white;
+    color: var(--ink);
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.cart-items {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.cart-item {
+    display: flex;
+    gap: 14px;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.cart-item > img {
+    flex: 0 0 82px;
+    width: 82px;
+    height: 82px;
+    border-radius: 12px;
+    background: white;
+    object-fit: cover;
+}
+
+.cart-item-details {
+    flex: 1;
+    min-width: 0;
+}
+
+.cart-item-details h3 {
+    margin: 2px 0 5px;
+    font: 700 13px Manrope, sans-serif;
+}
+
+.cart-item-details p {
+    margin: 0;
+    color: var(--green);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.cart-item-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 11px;
+}
+
+.quantity-button {
+    display: grid;
+    place-items: center;
+    width: 27px;
+    height: 27px;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    background: white;
+    color: var(--ink);
+    cursor: pointer;
+}
+
+.cart-item-controls > span {
+    min-width: 12px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.remove-item {
+    margin-left: auto;
+    border: 0;
+    background: none;
+    color: var(--muted);
+    font-size: 11px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.cart-empty {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cart-empty[hidden],
+.cart-drawer-footer[hidden] {
+    display: none;
+}
+
+.cart-empty > span {
+    margin-bottom: 15px;
+    font-size: 37px;
+}
+
+.cart-empty strong {
+    font: 800 19px Manrope, sans-serif;
+}
+
+.cart-empty p,
+.cart-drawer-footer p {
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.cart-empty .button-primary {
+    margin-top: 8px;
+}
+
+.cart-drawer-footer {
+    padding-top: 19px;
+    border-top: 1px solid var(--line);
+}
+
+.cart-subtotal {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+    font-size: 14px;
+}
+
+.cart-subtotal strong {
+    font: 800 17px Manrope, sans-serif;
+}
+
+.checkout-button {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 47px;
+    margin-top: 7px;
+    border: 0;
+    border-radius: 999px;
+    background: var(--green);
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background .2s;
+}
+
+.checkout-button:hover {
+    background: var(--green-dark);
+}
+
+.cart-close:focus-visible,
+.quantity-button:focus-visible,
+.remove-item:focus-visible,
+.checkout-button:focus-visible {
+    outline: 3px solid rgba(20, 92, 69, .35);
+    outline-offset: 3px;
+}
+
+@media (max-width: 650px) {
+    .shop-intro {
+        padding-top: 42px;
+        padding-bottom: 16px;
+    }
+
+    .image-marquee {
+        padding-bottom: 28px;
+    }
+
+    .image-marquee img {
+        width: 190px;
+        height: 125px;
+    }
+
+    .shop-intro h1 {
+        font-size: 40px;
+    }
+
+    .shop-page .section-heading {
+        align-items: start;
+    }
+
+    .shop-page .product-grid {
+        padding-bottom: 30px;
+    }
+
+    .cart-drawer {
+        padding: 22px 18px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .image-marquee-track {
+        animation: none;
+    }
+}

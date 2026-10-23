@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f7f8f5">
+    <meta name="description" content="Shop trusted technology, phones, and home appliances at VoltHouse. Great products, helpful service, and delivery to your door.">
+    <title>VoltHouse — Better tech. Better living.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="announcement">A little upgrade goes a long way. <strong>Free delivery on orders over $150</strong></div>
+    <header class="header">
+        <div class="wrap nav">
+            <a class="brand" href="#" aria-label="VoltHouse home"><span class="brand-mark">B</span><span>BLAZE <span>HOUSE</span></span></a>
+            <nav class="nav-links" aria-label="Main navigation">
+                <a href="shop.html">Shop</a><a href="#categories">Categories</a><a href="#offers">Our offers</a><a href="#footer">About us</a><a href="contact.html">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <label class="search">
+                    <svg width="14" height="14" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="8.8" cy="8.8" r="5.8" stroke="currentColor" stroke-width="1.7"/><path d="m13.2 13.2 4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+                    <input id="searchInput" type="search" placeholder="Search products" aria-label="Search products">
+                </label>
+                <button class="cart-button" type="button" aria-label="Shopping cart, 0 items">
+                    <svg width="15" height="15" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M2.5 3.5h2l2.1 9h8.8l2-6.5H5.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="16" r="1.1" fill="currentColor"/><circle cx="14" cy="16" r="1.1" fill="currentColor"/></svg>
+                    Cart <span class="cart-count" id="cartCount">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero wrap">
+            <div class="hero-panel">
+                <div class="hero-image" aria-hidden="true"></div>
+                <div class="hero-copy">
+                    <span class="eyebrow">A smarter kind of shopping</span>
+                    <h1>Better tech.<br><em>Better living.</em></h1>
+                    <p>Thoughtful technology and home essentials to make every day feel a little easier.</p>
+                    <a class="button-primary" href="shop.html">Explore the collection <span class="arrow">→</span></a>
+                </div>
+                <div class="hero-badge"><span class="badge-icon">✦</span><span>Good things, built to last</span></div>
+            </div>
+        </section>
+        <section class="wrap trust-row" aria-label="Why shop with VoltHouse">
+            <div class="trust-item"><span class="trust-icon">✓</span><div><strong>Quality you can trust</strong><span>Carefully selected brands</span></div></div>
+            <div class="trust-item"><span class="trust-icon">↗</span><div><strong>Easy, fast delivery</strong><span>Right to your doorstep</span></div></div>
+            <div class="trust-item"><span class="trust-icon">♡</span><div><strong>Here to help</strong><span>Friendly customer support</span></div></div>
+            <div class="trust-item"><span class="trust-icon">↺</span><div><strong>Simple returns</strong><span>Shop with peace of mind</span></div></div>
+        </section>
+        <section class="section wrap" id="categories">
+            <div class="section-heading">
+                <div><span class="eyebrow">Find your thing</span><h2>Shop by category</h2></div>
+                <a href="shop.html">Browse everything <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="categories">
+                <a class="category" href="shop.html?category=Phones"><span class="category-icon">📱</span><strong>Phones</strong><span>Latest smartphones</span></a>
+                <a class="category" href="shop.html?category=Televisions"><span class="category-icon">📺</span><strong>Televisions</strong><span>Make it movie night</span></a>
+                <a class="category" href="shop.html?category=Kitchen"><span class="category-icon">🧊</span><strong>Fridges</strong><span>Keep things fresh</span></a>
+                <a class="category" href="shop.html?category=Laundry"><span class="category-icon">🧺</span><strong>Laundry</strong><span>Wash day, simplified</span></a>
+                <a class="category" href="shop.html?category=Computers"><span class="category-icon">💻</span><strong>Computers</strong><span>Work, play, create</span></a>
+                <a class="category" href="shop.html?category=Audio"><span class="category-icon">🎧</span><strong>Audio</strong><span>Find your soundtrack</span></a>
+            </div>
+        </section>
+        <section class="promo wrap" id="offers">
+            <div class="promo-copy"><span class="eyebrow">Make home feel like home</span><h2>Little upgrades.<br>Big difference.</h2><p>From smarter kitchen appliances to laundry-day helpers, find the right fit for your home and your routine.</p><a href="#categories" class="button-primary">Explore home essentials <span class="arrow">→</span></a></div>
+            <div class="promo-image" role="img" aria-label="Bright modern home kitchen"></div>
+        </section>
+        <section class="newsletter wrap">
+            <div><h2>Good things in your inbox.</h2><p>Sign up for new arrivals, helpful tips, and the occasional little treat.</p><div class="form-message" id="formMessage" aria-live="polite"></div></div>
+            <form id="order-form" action="https://formspree.io/f/xwlvgdyj" method="POST" class="newsletter-form" id="newsletterForm"><input type="email" required placeholder="Your email address" aria-label="Your email address"><button type="submit">Sign me up</button></form>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="wrap footer-main">
+            <div class="footer-brand"><a class="brand" href="#"><span class="brand-mark">B</span><span>BLAZE <span>HOUSE</span></span></a><p>Everyday technology and home essentials, picked with care. Here to help you make a home that works for you.</p></div>
+            <div class="footer-column"><h3>Explore</h3><a href="shop.html">Shop all</a><a href="shop.html?category=Tech">Phones &amp; tech</a><a href="shop.html?category=Home">Home appliances</a><a href="#offers">Special offers</a></div>
+            <div class="footer-column"><h3>We're here to help</h3><a href="contact.html">Contact us</a><a href="#footer">Delivery information</a><a href="#footer">Returns &amp; exchanges</a><a href="#footer">FAQs</a></div>
+            <div class="footer-column"><h3>BLAZE HOUSE</h3><a href="#footer">Our story</a><a href="#footer">Careers</a><a href="#footer">Privacy policy</a><a href="#footer">Terms of service</a></div> <a href="index.html">HOME</a>
+        </div>
+        <div class="wrap footer-bottom"><span>© 2026 BlazeHouse. All rights reserved.</span><span>Good tech. Good home. Good days.</span></div>
+    </footer>
+    <script>
+        document.getElementById("newsletterForm").addEventListener("submit", (event) => {
+            event.preventDefault();
+            document.getElementById("formMessage").textContent = "Thanks for signing up! Keep an eye on your inbox.";
+            event.currentTarget.reset();
+        });
+    </script>
+</body>
+</html>

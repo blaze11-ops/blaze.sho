@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop smartphones, projectors, cameras, generators, home theater systems, routers, and more at BLAZEHOUSE.">
+    <meta name="theme-color" content="#f7f8f5">
+    <title>Shop — BLAZEHOUSE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <div class="announcement">A little upgrade goes a long way. <strong>Free delivery on orders over $150</strong></div>
+    <header class="header">
+        <div class="wrap nav">
+            <a class="brand" href="index.html" aria-label="BLAZEHOUSE home"><span class="brand-mark">B</span><span>BLAZE <span>HOUSE</span></span></a>
+            <nav class="nav-links" aria-label="Main navigation">
+                <a href="shop.html" aria-current="page">Shop</a><a href="index.html#categories">Categories</a><a href="index.html#offers">Our offers</a><a href="index.html#footer">About us</a><a href="contact.html">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <label class="search">
+                    <svg width="14" height="14" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="8.8" cy="8.8" r="5.8" stroke="currentColor" stroke-width="1.7"/><path d="m13.2 13.2 4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+                    <input id="searchInput" type="search" placeholder="Search products" aria-label="Search products">
+                </label>
+                <button class="cart-button" type="button" aria-label="Shopping cart, 0 items">
+                    <svg width="15" height="15" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M2.5 3.5h2l2.1 9h8.8l2-6.5H5.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="16" r="1.1" fill="currentColor"/><circle cx="14" cy="16" r="1.1" fill="currentColor"/></svg>
+                    Cart <span class="cart-count" id="cartCount">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="shop-page">
+        <section class="shop-intro wrap">
+            <span class="eyebrow">Find your next favorite</span>
+            <h1>Good tech for <em>every day.</em></h1>
+            <p>Explore phones, home appliances, and everyday technology chosen to make life a little easier.</p>
+        </section>
+        <section class="image-marquee" aria-label="Featured product images. Focus or hover to pause the scrolling images." tabindex="0">
+            <div class="image-marquee-track">
+                <div class="image-marquee-group">
+                    <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=700&q=80" alt="Smartphone">
+                    <img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?auto=format&fit=crop&w=700&q=80" alt="Refrigerator">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=80" alt="Wireless headphones">
+                    <img src="power station.JPG" alt="Portable power station">
+                    <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=700&q=80" alt="Laptop computer">
+                </div>
+                <div class="image-marquee-group" aria-hidden="true">
+                    <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=700&q=80" alt="">
+                    <img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?auto=format&fit=crop&w=700&q=80" alt="">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=80" alt="">
+                    <img src="power station.JPG" alt="">
+                    <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=700&q=80" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="products-section wrap" id="shop">
+            <div class="section-heading">
+                <div><span class="eyebrow">A few customer favorites</span><h2>Shop all products</h2></div>
+                <div class="filters" role="group" aria-label="Filter products">
+                    <button class="filter active" data-filter="All" type="button">All products</button>
+                    <button class="filter" data-filter="Phones" type="button">Phones</button>
+                    <button class="filter" data-filter="Home" type="button">Home</button>
+                    <button class="filter" data-filter="Tech" type="button">Tech</button>
+                    <button class="filter" data-filter="Kitchen" type="button">Kitchen</button>
+                </div>
+            </div>
+            <div class="product-grid" id="productGrid">
+                <article class="product-card" data-category="Phones" data-name="nova x smartphone">
+                    <div class="product-image"><img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=700&q=80" alt="Modern smartphone with a bright display" loading="lazy"><span class="tag">BESTSELLER</span></div>
+                    <div class="product-info"><div class="product-category">Phones</div><h3>Nova X Smartphone</h3><div class="rating">★★★★★ <span>(128 reviews)</span></div><div class="product-bottom"><div class="price">$699<small>$799</small></div><button class="add-button" type="button" aria-label="Add Nova X Smartphone to cart" data-product="Nova X Smartphone">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Phones" data-name="nova pro smartphone">
+                    <div class="product-image"><img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=700&q=80" alt="Black smartphone viewed from the back" loading="lazy"></div>
+                    <div class="product-info"><div class="product-category">Phones</div><h3>Nova Pro Smartphone</h3><div class="rating">★★★★★ <span>(64 reviews)</span></div><div class="product-bottom"><div class="price">$899</div><button class="add-button" type="button" aria-label="Add Nova Pro Smartphone to cart" data-product="Nova Pro Smartphone">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Phones" data-name="orbit 5g smartphone">
+                    <div class="product-image"><img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=700&q=80" alt="Smartphone with a colorful screen" loading="lazy"></div>
+                    <div class="product-info"><div class="product-category">Phones</div><h3>Orbit 5G Smartphone</h3><div class="rating">★★★★★ <span>(42 reviews)</span></div><div class="product-bottom"><div class="price">$549</div><button class="add-button" type="button" aria-label="Add Orbit 5G Smartphone to cart" data-product="Orbit 5G Smartphone">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Phones" data-name="pocket lite smartphone">
+                    <div class="product-image"><img src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?auto=format&fit=crop&w=700&q=80" alt="Smartphone on a desk" loading="lazy"></div>
+                    <div class="product-info"><div class="product-category">Phones</div><h3>Pocket Lite Smartphone</h3><div class="rating">★★★★ <span>(37 reviews)</span></div><div class="product-bottom"><div class="price">$329</div><button class="add-button" type="button" aria-label="Add Pocket Lite Smartphone to cart" data-product="Pocket Lite Smartphone">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Home" data-name="frostline french door fridge">
+                    <div class="product-image"><img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?auto=format&fit=crop&w=700&q=80" alt="Modern stainless steel refrigerator" loading="lazy"><span class="tag">TOP PICK</span></div>
+                    <div class="product-info"><div class="product-category">Kitchen &amp; home</div><h3>Frostline French Door Fridge</h3><div class="rating">★★★★★ <span>(86 reviews)</span></div><div class="product-bottom"><div class="price">$1,249<small>$1,399</small></div><button class="add-button" type="button" aria-label="Add Frostline French Door Fridge to cart" data-product="Frostline French Door Fridge">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Home" data-name="vista 55 inch 4k smart tv">
+                    <div class="product-image"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=700&q=80" alt="Large flat-screen television in a living room" loading="lazy"><span class="tag">JUST IN</span></div>
+                    <div class="product-info"><div class="product-category">Televisions</div><h3>Vista 55&quot; 4K Smart TV</h3><div class="rating">★★★★★ <span>(54 reviews)</span></div><div class="product-bottom"><div class="price">$549<small>$629</small></div><button class="add-button" type="button" aria-label="Add Vista 55 inch 4K Smart TV to cart" data-product="Vista 55-inch 4K Smart TV">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Tech" data-name="studio wireless headphones">
+                    <div class="product-image"><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=80" alt="Wireless over-ear headphones" loading="lazy"><span class="tag">FAN FAVORITE</span></div>
+                    <div class="product-info"><div class="product-category">Audio</div><h3>Studio Wireless Headphones</h3><div class="rating">★★★★★ <span>(203 reviews)</span></div><div class="product-bottom"><div class="price">$189<small>$229</small></div><button class="add-button" type="button" aria-label="Add Studio Wireless Headphones to cart" data-product="Studio Wireless Headphones">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Home" data-name="washwell front load washer">
+                    <div class="product-image"><img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=700&q=80" alt="Front-load washing machine" loading="lazy"><span class="tag">SMART HOME</span></div>
+                    <div class="product-info"><div class="product-category">Laundry</div><h3>Washwell Front-Load Washer</h3><div class="rating">★★★★★ <span>(72 reviews)</span></div><div class="product-bottom"><div class="price">$799<small>$899</small></div><button class="add-button" type="button" aria-label="Add Washwell Front-Load Washer to cart" data-product="Washwell Front-Load Washer">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Tech" data-name="everyday 14 inch laptop">
+                    <div class="product-image"><img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=700&q=80" alt="Laptop computer on a desk" loading="lazy"><span class="tag">STAFF PICK</span></div>
+                    <div class="product-info"><div class="product-category">Computers</div><h3>Everyday 14&quot; Laptop</h3><div class="rating">★★★★★ <span>(91 reviews)</span></div><div class="product-bottom"><div class="price">$899<small>$999</small></div><button class="add-button" type="button" aria-label="Add Everyday 14-inch Laptop to cart" data-product="Everyday 14-inch Laptop">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Tech" data-name="pulse mini bluetooth speaker">
+                    <div class="product-image"><img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=700&q=80" alt="Compact Bluetooth speaker" loading="lazy"></div>
+                    <div class="product-info"><div class="product-category">Audio</div><h3>Pulse Mini Bluetooth Speaker</h3><div class="rating">★★★★★ <span>(47 reviews)</span></div><div class="product-bottom"><div class="price">$79<small>$99</small></div><button class="add-button" type="button" aria-label="Add Pulse Mini Bluetooth Speaker to cart" data-product="Pulse Mini Bluetooth Speaker">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Tech" data-name="airlite wireless earbuds">
+                    <div class="product-image"><img src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=700&q=80" alt="Wireless earbuds in a charging case" loading="lazy"></div>
+                    <div class="product-info"><div class="product-category">Accessories</div><h3>Airlite Wireless Earbuds</h3><div class="rating">★★★★★ <span>(115 reviews)</span></div><div class="product-bottom"><div class="price">$119<small>$149</small></div><button class="add-button" type="button" aria-label="Add Airlite Wireless Earbuds to cart" data-product="Airlite Wireless Earbuds">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Kitchen" data-name="microwave">
+                    <div class="product-image"><img src="https://images.unsplash.com/photo-1585659722983-3a675dabf23d?auto=format&fit=crop&w=700&q=80" alt="Countertop microwave oven" loading="lazy"></div>
+                    <div class="product-info"><div class="product-category">Kitchen</div><h3>QuickHeat Microwave</h3><div class="rating">★★★★★ <span>(38 reviews)</span></div><div class="product-bottom"><div class="price">$149</div><button class="add-button" type="button" aria-label="Add QuickHeat Microwave to cart" data-product="QuickHeat Microwave">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Kitchen" data-name="water dispenser dispenser">
+                    <div class="product-image"><img src="des.JPG" alt="Fresh drinking water" loading="lazy"></div>
+                    <div class="product-info"><div class="product-category">Kitchen</div><h3>PureFlow Water Dispenser</h3><div class="rating">★★★★★ <span>(24 reviews)</span></div><div class="product-bottom"><div class="price">$229</div><button class="add-button" type="button" aria-label="Add PureFlow Water Dispenser to cart" data-product="PureFlow Water Dispenser">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Home" data-name="fan">
+                    <div class="product-image"><img src="https://images.unsplash.com/photo-1618941716939-553df3c6c278?auto=format&fit=crop&w=700&q=80" alt="Electric fan" loading="lazy"></div>
+                    <div class="product-info"><div class="product-category">Home comfort</div><h3>Breeze Standing Fan</h3><div class="rating">★★★★★ <span>(31 reviews)</span></div><div class="product-bottom"><div class="price">$89</div><button class="add-button" type="button" aria-label="Add Breeze Standing Fan to cart" data-product="Breeze Standing Fan">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Tech" data-name="robot cleaner robot vacuum">
+                    <div class="product-image"><img src="robot clean.JPG" alt="Robot cleaning appliance" loading="lazy"></div>
+                    <div class="product-info"><div class="product-category">Home cleaning</div><h3>RoboSweep Robot Cleaner</h3><div class="rating">★★★★★ <span>(52 reviews)</span></div><div class="product-bottom"><div class="price">$299</div><button class="add-button" type="button" aria-label="Add RoboSweep Robot Cleaner to cart" data-product="RoboSweep Robot Cleaner">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Tech" data-name="power station portable power">
+                    <div class="product-image"><img src="power station.JPG" alt="Portable power and solar equipment" loading="lazy"></div>
+                    <div class="product-info"><div class="product-category">Power</div><h3>VoltGo Portable Power Station</h3><div class="rating">★★★★★ <span>(41 reviews)</span></div><div class="product-bottom"><div class="price">$599</div><button class="add-button" type="button" aria-label="Add VoltGo Portable Power Station to cart" data-product="VoltGo Portable Power Station">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Tech" data-name="power bank portable charger">
+                    <div class="product-image"><img src="power bank.JPG" alt="Portable power bank" loading="lazy"></div>
+                    <div class="product-info"><div class="product-category">Phone accessories</div><h3>ChargeMate Power Bank</h3><div class="rating">★★★★★ <span>(67 reviews)</span></div><div class="product-bottom"><div class="price">$49</div><button class="add-button" type="button" aria-label="Add ChargeMate Power Bank to cart" data-product="ChargeMate Power Bank">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Home" data-name="rechargeable bulb light">
+                    <div class="product-image"><img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=700&q=80" alt="Rechargeable LED light bulb" loading="lazy"></div>
+                    <div class="product-info"><div class="product-category">Lighting</div><h3>EverGlow Rechargeable Bulb</h3><div class="rating">★★★★★ <span>(44 reviews)</span></div><div class="product-bottom"><div class="price">$15</div><button class="add-button" type="button" aria-label="Add EverGlow Rechargeable Bulb to cart" data-product="EverGlow Rechargeable Bulb">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Kitchen" data-name="dish washer dishwasher">
+                    <div class="product-image"><img src="dishwasher.JPG" alt="Modern kitchen appliance" loading="lazy"></div>
+                    <div class="product-info"><div class="product-category">Kitchen</div><h3>CleanWave Dishwasher</h3><div class="rating">★★★★★ <span>(29 reviews)</span></div><div class="product-bottom"><div class="price">$649</div><button class="add-button" type="button" aria-label="Add CleanWave Dishwasher to cart" data-product="CleanWave Dishwasher">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Kitchen" data-name="oven">
+                    <div class="product-image"><img src="oven.JPG" alt="Built-in kitchen oven" loading="lazy"></div>
+                    <div class="product-info"><div class="product-category">Kitchen</div><h3>ChefPro Electric Oven</h3><div class="rating">★★★★★ <span>(36 reviews)</span></div><div class="product-bottom"><div class="price">$499</div><button class="add-button" type="button" aria-label="Add ChefPro Electric Oven to cart" data-product="ChefPro Electric Oven">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Tech" data-name="airpods air pods wireless earbuds">
+                    <div class="product-image"><img src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=700&q=80" alt="Wireless earbuds and charging case" loading="lazy"></div>
+                    <div class="product-info"><div class="product-category">Audio</div><h3>AirPods Wireless Earbuds</h3><div class="rating">★★★★★ <span>(98 reviews)</span></div><div class="product-bottom"><div class="price">$129</div><button class="add-button" type="button" aria-label="Add AirPods Wireless Earbuds to cart" data-product="AirPods Wireless Earbuds">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Home" data-name="massaging chair massage">
+                    <div class="product-image"><img src="massage chair.JPG" alt="Relaxing massage chair" loading="lazy"></div>
+                    <div class="product-info"><div class="product-category">Home comfort</div><h3>RelaxWell Massaging Chair</h3><div class="rating">★★★★★ <span>(18 reviews)</span></div><div class="product-bottom"><div class="price">$1,299</div><button class="add-button" type="button" aria-label="Add RelaxWell Massaging Chair to cart" data-product="RelaxWell Massaging Chair">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Tech" data-name="solar solar panel">
+                    <div class="product-image"><img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=700&q=80" alt="Solar panels in sunlight" loading="lazy"></div>
+                    <div class="product-info"><div class="product-category">Renewable energy</div><h3>SunPower Solar Panel Kit</h3><div class="rating">★★★★★ <span>(33 reviews)</span></div><div class="product-bottom"><div class="price">$799</div><button class="add-button" type="button" aria-label="Add SunPower Solar Panel Kit to cart" data-product="SunPower Solar Panel Kit">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Tech" data-name="desktop desktop computer pc">
+                    <div class="product-image"><img src="https://images.unsplash.com/photo-1587831990711-23ca6441447b?auto=format&fit=crop&w=700&q=80" alt="Desktop computer setup" loading="lazy"></div>
+                    <div class="product-info"><div class="product-category">Computers</div><h3>Creator Desktop PC</h3><div class="rating">★★★★★ <span>(26 reviews)</span></div><div class="product-bottom"><div class="price">$1,099</div><button class="add-button" type="button" aria-label="Add Creator Desktop PC to cart" data-product="Creator Desktop PC">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Phones" data-name="charger phone cable">
+                    <div class="product-image"><img src="fast charger.JPG" alt="Phone charger and cable" loading="lazy"></div>
+                    <div class="product-info"><div class="product-category">Phone accessories</div><h3>FastCharge USB-C Charger</h3><div class="rating">★★★★★ <span>(73 reviews)</span></div><div class="product-bottom"><div class="price">$25</div><button class="add-button" type="button" aria-label="Add FastCharge USB-C Charger to cart" data-product="FastCharge USB-C Charger">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Tech" data-name="mouse wireless computer">
+                    <div class="product-image"><img src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=700&q=80" alt="Computer mouse" loading="lazy"></div>
+                    <div class="product-info"><div class="product-category">Computer accessories</div><h3>Precision Wireless Mouse</h3><div class="rating">★★★★★ <span>(62 reviews)</span></div><div class="product-bottom"><div class="price">$39</div><button class="add-button" type="button" aria-label="Add Precision Wireless Mouse to cart" data-product="Precision Wireless Mouse">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Tech" data-name="keyboard computer">
+                    <div class="product-image"><img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=700&q=80" alt="Computer keyboard" loading="lazy"></div>
+                    <div class="product-info"><div class="product-category">Computer accessories</div><h3>TypeRight Wireless Keyboard</h3><div class="rating">★★★★★ <span>(57 reviews)</span></div><div class="product-bottom"><div class="price">$59</div><button class="add-button" type="button" aria-label="Add TypeRight Wireless Keyboard to cart" data-product="TypeRight Wireless Keyboard">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Tech" data-name="electric scooter e-scooter">
+                    <div class="product-image"><img src="scooter.JPG" alt="Electric scooter" loading="lazy"></div>
+                    <div class="product-info"><div class="product-category">Personal transport</div><h3>Zip Electric Scooter</h3><div class="rating">★★★★★ <span>(22 reviews)</span></div><div class="product-bottom"><div class="price">$499</div><button class="add-button" type="button" aria-label="Add Zip Electric Scooter to cart" data-product="Zip Electric Scooter">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Tech" data-name="playstation play station gaming console">
+                    <div class="product-image"><img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?auto=format&fit=crop&w=700&q=80" alt="PlayStation gaming console and controller" loading="lazy"></div>
+                    <div class="product-info"><div class="product-category">Gaming</div><h3>PlayStation Console</h3><div class="rating">★★★★★ <span>(89 reviews)</span></div><div class="product-bottom"><div class="price">$499</div><button class="add-button" type="button" aria-label="Add PlayStation Console to cart" data-product="PlayStation Console">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Tech" data-name="x-box xbox gaming console">
+                    <div class="product-image"><img src="https://images.unsplash.com/photo-1621259182978-fbf93132d53d?auto=format&fit=crop&w=700&q=80" alt="Xbox gaming console and controller" loading="lazy"></div>
+                    <div class="product-info"><div class="product-category">Gaming</div><h3>Xbox Gaming Console</h3><div class="rating">★★★ <span>(76 reviews)</span></div><div class="product-bottom"><div class="price">$479</div><button class="add-button" type="button" aria-label="Add Xbox Gaming Console to cart" data-product="Xbox Gaming Console">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Kitchen" data-name="electric cooker cooker">
+                    <div class="product-image"><img src="electric cooker.JPG" alt="Electric cooker in a modern kitchen" loading="lazy"></div>
+                    <div class="product-info"><div class="product-category">Kitchen</div><h3>MultiChef Electric Cooker</h3><div class="rating">★★★★★ <span>(48 reviews)</span></div><div class="product-bottom"><div class="price">$119</div><button class="add-button" type="button" aria-label="Add MultiChef Electric Cooker to cart" data-product="MultiChef Electric Cooker">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Kitchen" data-name="electric pot pot">
+                    <div class="product-image"><img src="electric pot.JPG" alt="Electric cooking pot" loading="lazy"></div>
+                    <div class="product-info"><div class="product-category">Kitchen</div><h3>EasyCook Electric Pot</h3><div class="rating">★★★★ <span>(35 reviews)</span></div><div class="product-bottom"><div class="price">$69</div><button class="add-button" type="button" aria-label="Add EasyCook Electric Pot to cart" data-product="EasyCook Electric Pot">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Tech" data-name="hd projector home theater">
+                    <div class="product-image"><img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=700&q=80" alt="Projector displaying a movie on a screen" loading="lazy"></div>
+                    <div class="product-info"><div class="product-category">Home theater</div><h3>VisionCast HD Projector</h3><div class="rating">★★★★★ <span>(28 reviews)</span></div><div class="product-bottom"><div class="price">$349</div><button class="add-button" type="button" aria-label="Add VisionCast HD Projector to cart" data-product="VisionCast HD Projector">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Tech" data-name="video camera camcorder">
+                    <div class="product-image"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=700&q=80" alt="Digital video camera" loading="lazy"></div>
+                    <div class="product-info"><div class="product-category">Cameras</div><h3>CapturePro Video Camera</h3><div class="rating">★★★★★ <span>(31 reviews)</span></div><div class="product-bottom"><div class="price">$549</div><button class="add-button" type="button" aria-label="Add CapturePro Video Camera to cart" data-product="CapturePro Video Camera">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Tech" data-name="cctv security camera kit">
+                    <div class="product-image"><img src="cctv camera.JPG" alt="Home security camera" loading="lazy"></div>
+                    <div class="product-info"><div class="product-category">Security</div><h3>SecureView CCTV Camera Kit</h3><div class="rating">★★★★★ <span>(46 reviews)</span></div><div class="product-bottom"><div class="price">$279</div><button class="add-button" type="button" aria-label="Add SecureView CCTV Camera Kit to cart" data-product="SecureView CCTV Camera Kit">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Tech" data-name="portable generator power">
+                    <div class="product-image"><img src="generator.JPG" alt="Electric power infrastructure" loading="lazy"></div>
+                    <div class="product-info"><div class="product-category">Power</div><h3>PowerMax Portable Generator</h3><div class="rating">★★★★★ <span>(39 reviews)</span></div><div class="product-bottom"><div class="price">$899</div><button class="add-button" type="button" aria-label="Add PowerMax Portable Generator to cart" data-product="PowerMax Portable Generator">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Tech" data-name="voltage stabilizer regulator">
+                    <div class="product-image"><img src="stablizer1.JPG" alt="Electronic components on a circuit board" loading="lazy"></div>
+                    <div class="product-info"><div class="product-category">Power protection</div><h3>VoltGuard Voltage Stabilizer</h3><div class="rating">★★★★ <span>(21 reviews)</span></div><div class="product-bottom"><div class="price">$89</div><button class="add-button" type="button" aria-label="Add VoltGuard Voltage Stabilizer to cart" data-product="VoltGuard Voltage Stabilizer">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Tech" data-name="home theater sound system speakers">
+                    <div class="product-image"><img src="sound.JPG" alt="Home audio speaker" loading="lazy"></div>
+                    <div class="product-info"><div class="product-category">Audio</div><h3>SurroundMax Home Theater</h3><div class="rating">★★★★★ <span>(53 reviews)</span></div><div class="product-bottom"><div class="price">$399</div><button class="add-button" type="button" aria-label="Add SurroundMax Home Theater to cart" data-product="SurroundMax Home Theater">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Tech" data-name="wifi router wireless internet">
+                    <div class="product-image"><img src="https://images.unsplash.com/photo-1606904825846-647eb07f5be2?auto=format&fit=crop&w=700&q=80" alt="Wireless router" loading="lazy"></div>
+                    <div class="product-info"><div class="product-category">Networking</div><h3>AirLink Wi-Fi 6 Router</h3><div class="rating">★★★★★ <span>(44 reviews)</span></div><div class="product-bottom"><div class="price">$129</div><button class="add-button" type="button" aria-label="Add AirLink Wi-Fi 6 Router to cart" data-product="AirLink Wi-Fi 6 Router">+</button></div></div>
+                </article>
+                <article class="product-card" data-category="Tech" data-name="dvd player digital video disc">
+                    <div class="product-image"><img src="dvd.JPG" alt="Home entertainment television" loading="lazy"></div>
+                    <div class="product-info"><div class="product-category">Home entertainment</div><h3>PlayBack HD DVD Player</h3><div class="rating">★★★★ <span>(19 reviews)</span></div><div class="product-bottom"><div class="price">$79</div><button class="add-button" type="button" aria-label="Add PlayBack HD DVD Player to cart" data-product="PlayBack HD DVD Player">+</button></div></div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="wrap footer-main">
+            <div class="footer-brand"><a class="brand" href="index.html"><span class="brand-mark">B</span><span>BLAZE<span>HOUSE</span></span></a><p>Everyday technology and home essentials, picked with care. Here to help you make a home that works for you.</p></div>
+            <div class="footer-column"><h3>Explore</h3><a href="shop.html">Shop all</a><a href="shop.html?category=Tech">Phones &amp; tech</a><a href="shop.html?category=Home">Home appliances</a><a href="index.html#offers">Special offers</a></div>
+            <div class="footer-column"><h3>We're here to help</h3><a href="contact.html">Contact us</a><a href="index.html#footer">Delivery information</a><a href="index.html#footer">Returns &amp; exchanges</a><a href="index.html#footer">FAQs</a></div>
+            <div class="footer-column"><h3>BLAZE HOUSE</h3><a href="index.html#footer">Our story</a><a href="index.html#footer">Careers</a><a href="index.html#footer">Privacy policy</a><a href="index.html#footer">Terms of service</a></div> <a href="index.html">HOME</a>
+        </div>
+        <div class="wrap footer-bottom"><span>© 2026 BLAZE HOUSE. All rights reserved.</span><span>Good tech. Good home. Good days.</span></div>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <div class="cart-backdrop" id="cartBackdrop" hidden></div>
+    <aside class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle" aria-hidden="true">
+        <div class="cart-drawer-header">
+            <div><span class="eyebrow">Your shopping bag</span><h2 id="cartTitle">Your cart <span id="cartItemLabel">(0)</span></h2></div>
+            <button class="cart-close" id="closeCart" type="button" aria-label="Close cart">x</button>
+        </div>
+        <div class="cart-items" id="cartItems" aria-live="polite"></div>
+        <div class="cart-empty" id="cartEmpty"><span>🛍️</span><strong>Your cart is empty</strong><p>Add something you love and it will show up here.</p><button class="button-primary" id="continueShopping" type="button">Continue shopping <span class="arrow">→</span></button></div>
+        <div class="cart-drawer-footer" id="cartFooter" hidden>
+            <div class="cart-subtotal"><span>Subtotal</span><strong id="cartSubtotal">$0.00</strong></div>
+            <p>Shipping and taxes are calculated at checkout.</p>
+            <a class="checkout-button" href="checkout.html">Continue to checkout</a>
+        </div>
+    </aside>
+    <script>
+        const cartCount = document.getElementById("cartCount");
+        const cartButton = document.querySelector(".cart-button");
+        const toast = document.getElementById("toast");
+        const filters = document.querySelectorAll(".filter");
+        const products = document.querySelectorAll(".product-card");
+        const searchInput = document.getElementById("searchInput");
+        const categoryGroups = new Map([
+            ["Phones", "Phones"],
+            ["Televisions", "Home"],
+            ["Kitchen", "Home"],
+            ["Laundry", "Home"],
+            ["Computers", "Tech"],
+            ["Audio", "Tech"]
+        ]);
+        const requestedCategory = new URLSearchParams(window.location.search).get("category");
+        const requestedFilter = categoryGroups.get(requestedCategory) || requestedCategory;
+        let activeFilter = ["All", "Phones", "Home", "Tech"].includes(requestedFilter) ? requestedFilter : "All";
+        const savedCart = JSON.parse(localStorage.getItem("blazehouse-cart") || "[]");
+        const cart = new Map(savedCart);
+        let toastTimer;
+        let previousFocus;
+
+        function showToast(message) {
+            toast.textContent = message;
+            toast.classList.add("show");
+            clearTimeout(toastTimer);
+            toastTimer = setTimeout(() => toast.classList.remove("show"), 2400);
+        }
+
+        function updateProducts() {
+            const query = searchInput.value.trim().toLowerCase();
+            let visibleCount = 0;
+            products.forEach((product) => {
+                const matchesFilter = activeFilter === "All" || product.dataset.category === activeFilter;
+                const matchesSearch = product.dataset.name.includes(query);
+                const visible = matchesFilter && matchesSearch;
+                product.hidden = !visible;
+                if (visible) visibleCount += 1;
+            });
+            let noResults = document.querySelector(".no-results");
+            if (visibleCount === 0 && !noResults) {
+                noResults = document.createElement("p");
+                noResults.className = "no-results";
+                noResults.textContent = "No products found. Try another search.";
+                document.getElementById("productGrid").append(noResults);
+            } else if (visibleCount > 0 && noResults) {
+                noResults.remove();
+            }
+        }
+
+        function updateCart() {
+                localStorage.setItem("blazehouse-cart", JSON.stringify([...cart]));
+                const itemCount = [...cart.values()].reduce((total, item) => total + item.quantity, 0);
+                cartCount.textContent = itemCount;
+                cartButton.setAttribute("aria-label", `Shopping cart, ${itemCount} ${itemCount === 1 ? "item" : "items"}`);
+                document.getElementById("cartItemLabel").textContent = `(${itemCount})`;
+                document.getElementById("cartEmpty").hidden = itemCount !== 0;
+                document.getElementById("cartFooter").hidden = itemCount === 0;
+
+                const cartItemsList = document.getElementById("cartItems");
+                cartItemsList.replaceChildren();
+                let subtotal = 0;
+                cart.forEach((item, productName) => {
+                    subtotal += item.price * item.quantity;
+                    const row = document.createElement("article");
+                    row.className = "cart-item";
+                    const image = document.createElement("img");
+                    image.src = item.image;
+                    image.alt = "";
+                    const details = document.createElement("div");
+                    details.className = "cart-item-details";
+                    const name = document.createElement("h3");
+                    name.textContent = productName;
+                    const price = document.createElement("p");
+                    price.textContent = `$${item.price.toFixed(2)}`;
+                    const controls = document.createElement("div");
+                    controls.className = "cart-item-controls";
+                    const decrease = document.createElement("button");
+                    decrease.type = "button";
+                    decrease.className = "quantity-button";
+                    decrease.textContent = "−";
+                    decrease.setAttribute("aria-label", `Remove one ${productName}`);
+                    decrease.addEventListener("click", () => changeQuantity(productName, -1));
+                    const quantity = document.createElement("span");
+                    quantity.textContent = item.quantity;
+                    const increase = document.createElement("button");
+                    increase.type = "button";
+                    increase.className = "quantity-button";
+                    increase.textContent = "+";
+                    increase.setAttribute("aria-label", `Add one ${productName}`);
+                    increase.addEventListener("click", () => changeQuantity(productName, 1));
+                    const remove = document.createElement("button");
+                    remove.type = "button";
+                    remove.className = "remove-item";
+                    remove.textContent = "Remove";
+                    remove.addEventListener("click", () => {
+                        cart.delete(productName);
+                        updateCart();
+                    });
+                    controls.append(decrease, quantity, increase, remove);
+                    details.append(name, price, controls);
+                    row.append(image, details);
+                    cartItemsList.append(row);
+                });
+                document.getElementById("cartSubtotal").textContent = `$${subtotal.toFixed(2)}`;
+        }
+
+        function changeQuantity(productName, change) {
+                const item = cart.get(productName);
+                if (!item) return;
+                item.quantity += change;
+                if (item.quantity <= 0) cart.delete(productName);
+                updateCart();
+        }
+
+        function openCart() {
+                previousFocus = document.activeElement;
+                document.getElementById("cartBackdrop").hidden = false;
+                document.getElementById("cartDrawer").classList.add("open");
+                document.getElementById("cartDrawer").setAttribute("aria-hidden", "false");
+                document.body.classList.add("cart-open");
+                document.getElementById("closeCart").focus();
+        }
+
+        function closeCart() {
+                document.getElementById("cartDrawer").classList.remove("open");
+                document.getElementById("cartDrawer").setAttribute("aria-hidden", "true");
+                document.getElementById("cartBackdrop").hidden = true;
+                document.body.classList.remove("cart-open");
+                if (previousFocus) previousFocus.focus();
+        }
+
+        filters.forEach((button) => {
+            button.classList.toggle("active", button.dataset.filter === activeFilter);
+            button.addEventListener("click", () => {
+                activeFilter = button.dataset.filter;
+                filters.forEach((filter) => filter.classList.toggle("active", filter === button));
+                updateProducts();
+            });
+        });
+        searchInput.addEventListener("input", updateProducts);
+        cartButton.addEventListener("click", openCart);
+        document.getElementById("closeCart").addEventListener("click", closeCart);
+        document.getElementById("cartBackdrop").addEventListener("click", closeCart);
+        document.getElementById("continueShopping").addEventListener("click", closeCart);
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape" && document.getElementById("cartDrawer").classList.contains("open")) {
+                closeCart();
+            }
+        });
+        document.querySelectorAll(".add-button").forEach((button) => {
+            button.addEventListener("click", () => {
+                const productCard = button.closest(".product-card");
+                const productName = button.dataset.product;
+                const price = Number(productCard.querySelector(".price").childNodes[0].textContent.replace(/[$,]/g, ""));
+                const item = cart.get(productName) || {
+                    price,
+                    image: productCard.querySelector(".product-image img").src,
+                    quantity: 0
+                };
+                item.quantity += 1;
+                cart.set(productName, item);
+                updateCart();
+                showToast(`${button.dataset.product} added to your cart`);
+            });
+        });
+        updateProducts();
+    </script>
+</body>
+</html>
